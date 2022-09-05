@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
+import { faker } from '@faker-js/faker';
 
 
 const App = ()=>{
@@ -8,7 +8,7 @@ const App = ()=>{
         <div className="ui container comments">
             <div className="comment">
                 <a href="/" className="avatar">
-                    <img alt="avatar" />
+                    <img alt="avatar" src={faker.image.avatar()} />
                 </a>
                 <div className="content">
                     <a href="/" className="author">
@@ -41,3 +41,5 @@ root.render(
 // Search these sites.
 // https://semantic-ui.com/
 // https://cdnjs.com/libraries/semantic-ui
+// https://github.com/faker-js/faker
+// https://fakerjs.dev/
