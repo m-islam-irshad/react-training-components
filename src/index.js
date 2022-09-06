@@ -7,7 +7,13 @@ import ApprovalCard from "./components/ApprovalCard";
 const App = ()=>{
     return (
         <div className="ui container comments">
-            <ApprovalCard/>
+
+        <ApprovalCard>
+        <div>
+        <h4>Are You sure you want to do this?</h4>
+        </div>
+        </ApprovalCard>
+            <ApprovalCard>
             <CommentDetail 
                 author="Muhammad Islam" 
                 timeAgo="Today at 4:45PM" 
@@ -15,6 +21,8 @@ const App = ()=>{
                 content="Nice blog post"
 
             />
+            </ApprovalCard>
+            <ApprovalCard>
             <CommentDetail 
                 author="Muhammad Muzammal" 
                 timeAgo="Today at 2:00PM" 
@@ -22,6 +30,8 @@ const App = ()=>{
                 content="I like the subject"
 
             />
+            </ApprovalCard>
+            <ApprovalCard>
             <CommentDetail 
                 author="Muhammad Hamza" 
                 timeAgo="Today at 5:00PM" 
@@ -29,6 +39,8 @@ const App = ()=>{
                 content="I like the writing"
 
             />
+            </ApprovalCard>
+            <ApprovalCard>
             <CommentDetail 
                 author="Muhammad Talha" 
                 timeAgo="Today at 9:00AM" 
@@ -36,6 +48,7 @@ const App = ()=>{
                 content="I like the topic"
 
             />
+            </ApprovalCard>
         </div>
     )
 }; 
