@@ -3,6 +3,8 @@ import ReactDOM from "react-dom/client";
 import { faker } from '@faker-js/faker';
 import CommentDetail from "./components/CommentDetail";
 import ApprovalCard from "./components/ApprovalCard";
+import Message from "./components/Message";
+import Exercise from "./components/Exercise44";
 
 const App = ()=>{
     return (
@@ -49,6 +51,14 @@ const App = ()=>{
 
             />
             </ApprovalCard>
+
+            <Message 
+                header="Attention!"
+                text= "We did an update"
+            />
+
+            <Exercise/>
+
         </div>
     )
 }; 
